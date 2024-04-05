@@ -18,8 +18,14 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '3.2.4'
+    // templates
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '3.2.2'
+    // db
+    implementation(platform("org.jdbi:jdbi3-bom:3.45.1"))
+    implementation("org.jdbi:jdbi3-core")
+    implementation("org.jdbi:jdbi3-spring5")
 
+    // tests
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
