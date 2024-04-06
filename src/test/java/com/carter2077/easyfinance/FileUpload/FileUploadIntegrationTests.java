@@ -35,7 +35,9 @@ public class FileUploadIntegrationTests {
 
     @Test
     public void shouldUploadFile() throws Exception {
-        ClassPathResource resource = new ClassPathResource("testupload.txt", getClass());
+        String absolutePath = "/Users/carterbrown/Documents/workspaces/dev/easy-budget/src/test/java/com/carter2077" +
+                "/easyfinance/FileUpload/testupload.txt";
+        ClassPathResource resource = new ClassPathResource(absolutePath, getClass());
 
         MultiValueMap<String, Object> map = new LinkedMultiValueMap<String, Object>();
         map.add("file", resource);
