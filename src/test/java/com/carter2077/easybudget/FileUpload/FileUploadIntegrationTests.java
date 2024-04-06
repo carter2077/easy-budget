@@ -1,6 +1,6 @@
-package com.carter2077.easyfinance.FileUpload;
+package com.carter2077.easybudget.FileUpload;
 
-import com.carter2077.easyfinance.service.StorageService;
+import com.carter2077.easybudget.service.StorageService;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;

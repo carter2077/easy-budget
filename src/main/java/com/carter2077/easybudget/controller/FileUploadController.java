@@ -1,9 +1,9 @@
-package com.carter2077.easyfinance.controller;
+package com.carter2077.easybudget.controller;
 
 import java.io.IOException;
 import java.util.stream.Collectors;
 
-import com.carter2077.easyfinance.exception.storage.StorageFileNotFoundException;
+import com.carter2077.easybudget.exception.storage.StorageFileNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -20,7 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.carter2077.easyfinance.service.StorageService;
+import com.carter2077.easybudget.service.StorageService;
 
 @Controller
 public class FileUploadController {

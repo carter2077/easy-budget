@@ -1,10 +1,10 @@
-package com.carter2077.easyfinance.FileUpload;
+package com.carter2077.easybudget.FileUpload;
 
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
-import com.carter2077.easyfinance.exception.storage.StorageFileNotFoundException;
-import com.carter2077.easyfinance.service.StorageService;
+import com.carter2077.easybudget.exception.storage.StorageFileNotFoundException;
+import com.carter2077.easybudget.service.StorageService;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 

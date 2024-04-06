@@ -1,4 +1,4 @@
-package com.carter2077.easyfinance.util.storage;
+package com.carter2077.easybudget.util.storage;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

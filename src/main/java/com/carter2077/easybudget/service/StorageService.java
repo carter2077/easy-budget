@@ -1,4 +1,4 @@
-package com.carter2077.easyfinance.service;
+package com.carter2077.easybudget.service;
 
 import org.springframework.core.io.Resource;
 import org.springframework.web.multipart.MultipartFile;

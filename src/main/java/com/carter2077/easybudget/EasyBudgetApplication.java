@@ -1,7 +1,7 @@
-package com.carter2077.easyfinance;
+package com.carter2077.easybudget;
 
-import com.carter2077.easyfinance.service.StorageService;
-import com.carter2077.easyfinance.util.storage.StorageProperties;
+import com.carter2077.easybudget.service.StorageService;
+import com.carter2077.easybudget.util.storage.StorageProperties;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableConfigurationProperties(StorageProperties.class)
-public class EasyFinanceApplication {
+public class EasyBudgetApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EasyFinanceApplication.class, args);
+        SpringApplication.run(EasyBudgetApplication.class, args);
     }
 
     @Bean

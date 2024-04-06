@@ -1,4 +1,4 @@
-package com.carter2077.easyfinance.exception.storage;
+package com.carter2077.easybudget.exception.storage;
 
 public class StorageException extends RuntimeException {
 

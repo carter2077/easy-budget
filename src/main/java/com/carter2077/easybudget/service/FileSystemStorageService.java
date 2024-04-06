@@ -1,4 +1,4 @@
-package com.carter2077.easyfinance.service;
+package com.carter2077.easybudget.service;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,9 +9,9 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.stream.Stream;
 
-import com.carter2077.easyfinance.exception.storage.StorageException;
-import com.carter2077.easyfinance.exception.storage.StorageFileNotFoundException;
-import com.carter2077.easyfinance.util.storage.StorageProperties;
+import com.carter2077.easybudget.exception.storage.StorageException;
+import com.carter2077.easybudget.exception.storage.StorageFileNotFoundException;
+import com.carter2077.easybudget.util.storage.StorageProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
