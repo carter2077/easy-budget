@@ -35,9 +35,7 @@ public class FileUploadIntegrationTests {
 
     @Test
     public void shouldUploadFile() throws Exception {
-        String absolutePath = "/Users/carterbrown/Documents/workspaces/dev/easy-budget/src/test/java/com/carter2077" +
-                "/easyfinance/FileUpload/testupload.txt";
-        ClassPathResource resource = new ClassPathResource(absolutePath, getClass());
+        ClassPathResource resource = new ClassPathResource("testupload.txt", getClass());
 
         MultiValueMap<String, Object> map = new LinkedMultiValueMap<String, Object>();
         map.add("file", resource);
@@ -61,7 +59,7 @@ public class FileUploadIntegrationTests {
         assertThat(response.getStatusCodeValue()).isEqualTo(200);
         assertThat(response.getHeaders().getFirst(HttpHeaders.CONTENT_DISPOSITION))
                 .isEqualTo("attachment; filename=\"testupload.txt\"");
-        assertThat(response.getBody()).isEqualTo("Spring Framework");
+        assertThat(response.getBody()).isEqualTo("Easy Budget");
     }
 
 }
