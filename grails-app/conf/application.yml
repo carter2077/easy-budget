@@ -3,6 +3,19 @@ info:
     name: '@info.app.name@'
     version: '@info.app.version@'
     grailsVersion: '@info.app.grailsVersion@'
+dataSource:
+  url: jdbc:postgresql://localhost:5432/postgres
+  driverClassName: org.postgresql.Driver
+  username: postgres
+  password: ''
+  pooled: true
+  jmxExport: true
+  dbCreate: update
+hibernate:
+  cache:
+    queries: false
+    use_second_level_cache: false
+    use_query_cache: false
 grails:
   mime:
     disable:
@@ -49,16 +62,12 @@ grails:
       codec: html
   controllers:
     defaultScope: singleton
-dataSource:
-  url: jdbc:postgresql://localhost:5432/postgres
-  driverClassName: org.postgresql.Driver
-  username: postgres
-  password: ''
-  pooled: true
-  jmxExport: true
-  dbCreate: update
-hibernate:
-  cache:
-    queries: false
-    use_second_level_cache: false
-    use_query_cache: false
+environments:
+  production:
+    grails:
+      plugin:
+        console:
+          enabled: false
+          fileStore:
+            remote:
+              enabled: false
