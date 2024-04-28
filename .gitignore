@@ -1,11 +1,24 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+### Java ###
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+### Gradle ###
+# Exclude Folder List #
+.gradle/
 build/
 
 ### IntelliJ ###
-.idea
-*.iws
 *.iml
 *.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
+*.iws
+.idea/
