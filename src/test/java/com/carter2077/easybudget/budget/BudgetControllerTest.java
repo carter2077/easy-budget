@@ -1,4 +1,4 @@
-package com.carter2077.easybudget;
+package com.carter2077.easybudget.budget;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doNothing;
@@ -13,9 +13,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import com.carter2077.easybudget.budget.Budget;
-import com.carter2077.easybudget.budget.BudgetController;
-import com.carter2077.easybudget.budget.BudgetRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
